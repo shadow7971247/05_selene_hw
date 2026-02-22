@@ -38,6 +38,7 @@ var/
 wheels/
 
 # IDE
+.idea/
 /idea
 .vscode/
 *.swp
