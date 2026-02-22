@@ -11,13 +11,12 @@ def test_fill_form():
     browser.element("#userEmail").type("ktoto@example.com")
     browser.element('//input[@value="Male"]').click()
     browser.element("#userNumber").type("1234567890")
-    # пока что вводится цифрами, в бранче постараюсь добавить другой метод
-    browser.element("#dateOfBirthInput").type("1990-05-15")
+    #так и не понял как сделать мануальный выбор
+    browser.element('#dateOfBirthInput').type('13-11-1995')
+
     browser.element('//input[@id="hobbies-Music"]').click()
     browser.element('//input[@id="hobbies-Reading"]').click()
-
     browser.element("#uploadPicture").send_keys(os.path.abspath("test.jpg"))
-
     browser.element("#currentAddress").type("Улица Пушкина")
     browser.element("#state").click()
     browser.element('//option[contains(text(), "NCR")]').click()
