@@ -11,6 +11,7 @@ def test_fill_form():
     browser.element("#userEmail").type("ktoto@example.com")
     browser.element('//input[@value="Male"]').click()
     browser.element("#userNumber").type("1234567890")
+
     #так и не понял как сделать мануальный выбор
     browser.element('#dateOfBirthInput').type('13-11-1995')
 
