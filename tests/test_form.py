@@ -27,7 +27,6 @@ def test_fill_form():
     # Отправить и проверить
     browser.element("#submit").click()
     browser.element('//*[contains(text(), "Thanks for submitting")]').should(be.visible)
-    # сделан поиск через часть текста, тк мешает всплывающее окно хрома
 
     browser.element('//td[text()="Student Name"]/following-sibling::td').should(have.text('Кто то там Такой то'))
     browser.element('//td[text()="Student Email"]/following-sibling::td').should(have.text('ktoto@example.com'))
